@@ -26,8 +26,8 @@
 // ----------------------------------------------------------------------------
 
 // WiFi credentials
-const char *WIFI_SSID = "charopevezWiFi";
-const char *WIFI_PASS = "08085125398";
+const char *WIFI_SSID = "ROMAN";
+const char *WIFI_PASS = "";
 
 // Romans HEAD credentials
 const char *HEAD_SSID = "ROMAN";
@@ -81,7 +81,7 @@ AsyncWebSocket ws("/ws");
 unsigned long started_at; //turn on time
 const unsigned long refresh = 1*15*1000UL;
 const unsigned long order_time = 1*30*1000UL;
-
+unsigned long order_start_time=0;
 
 
 int order_id=1;

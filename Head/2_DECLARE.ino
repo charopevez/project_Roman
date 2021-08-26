@@ -8,8 +8,8 @@ AsyncWebServer server(80);
 // AP credetials
 char* ap_ssid = "ROMAN";
 char* ap_password = "";
-IPAddress apIP(1,1,1,1);
-IPAddress netMsk(255, 255, 255, 0);
+IPAddress apIP(192,168,43,88);
+IPAddress netMsk(255, 255, 0, 0);
 
 // DNS server
 const byte DNS_PORT = 53;

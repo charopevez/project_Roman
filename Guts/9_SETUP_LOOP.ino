@@ -20,7 +20,8 @@ void loop() {
        notifyClients();
       }
   // check if there is an orders
-  if (is_ready && currentOrders>0){
-    make();
-  }
+  if (is_ready && currentOrders>0&&(millis() > order_start_time + order_time)){
+        order_start_time= millis();
+        make();
+    }
 }
